@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Beat Zen - Seamless music on your fingertips </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://res.cloudinary.com/beatzen/image/upload/v1768388495/LOGO_cj2qo1.jpg"
+        type="image/jpeg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        media="print" onload="this.media='all'">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="nav-links">
+            <a href="#" id="home-link" aria-label="Go to Home">
+                <span class="nav-link-content">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>Home</span>
+                </span>
+            </a>
+            <a href="#" id="search-link" aria-label="Search Music">
+                <span class="nav-link-content">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span>Search</span>
+                </span>
+            </a>
+            <a href="#" id="explore-link" aria-label="View explore">
+                <span class="nav-link-content">
+                    <i class="fas fa-music" aria-hidden="true"></i>
+                    <span>Explore</span>
+                </span>
+            </a>
+            <a href="#" id="artists-link" aria-label="View Artists">
+                <span class="nav-link-content">
+                    <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+                    <span>Artists</span>
+                </span>
+            </a>
+            <a href="#" id="playlists-link" aria-label="View Playlists">
+                <span class="nav-link-content">
+                    <i class="fas fa-compact-disc" aria-hidden="true"></i>
+                    <span>Playlists</span>
+                </span>
+            </a>
+            <a href="#" id="about-link" aria-label="About Beat Zen">
+                <span class="nav-link-content">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <span>About</span>
+                </span>
+            </a>
+            
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <!-- Search -->
+        <section id="search-container" class="search-container hidden" aria-label="Search Section">
+            <div class="search-bar-wrapper">
+                <input type="text" id="search-bar" class="search-bar" placeholder="Search albums, years, songs, artists"
+                    aria-label="Search through your music library">
+                <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                <i class="fas fa-times-circle clear-search-icon" id="clear-search" style="display: none;"
+                    aria-label="Clear Search"></i>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="search-results-container" class="search-results-container"></section>
+        <section id="year-sections-container" class="year-sections-container"></section>
+        <section id="playlists-container" class="playlists-container" style="display: none;"></section>
+        <section id="artists-container" class="artists-container" style="display: none;"></section>
+        <section id="explore-container" class="explore-container" style="display: none;"></section>
+
+        <!-- About -->
+        <section id="about-container" class="about-container" style="display: none;">
+            <div class="info-content-wrapper">
+                <h3>About Beat Zen</h3>
+                <p>The name <strong>Beat Zen</strong> was chosen to balance high-quality music. <strong>"Beat"</strong>
+                    refers to the heart of the songs we provide, while <strong>"Zen"</strong> represents the simple and
+                    focused features of our website. By using basic web technology, we ensure a smooth experience on all
+                    your devices so you can focus entirely on the music.</p>
+                <hr>
+                <h3>Top Features</h3>
+                <ul class="features-list">
+                    <li><strong>Yearly Organization</strong>: Browse movie albums neatly grouped by their release year.
+                    </li>
+
+                    <li><strong>Instant Search</strong>: A fast search bar helps you find albums, songs, years, artists,
+                        or playlists in a blink.</li>
+
+                    <li><strong>Artists & explore</strong>: Discover your favorite singers and explore unique music
+                        explore.</li>
+
+                    <li><strong>Infinite Loop</strong>: Turn on the repeat button to keep your favorite song playing
+                        as many times as you listen.</li>
+
+                    <li><strong>Maximized Player</strong>: Simply tap the album cover or the player bar to enter a
+                        full-screen music experience.</li>
+
+                    <li><strong>Full Screen Info</strong>: The maximize view shows you the movie name and the playlist
+                        location
+                        clearly at the top.</li>
+
+                    <li><strong>Smart Sleep Timer</strong>: Set a timer for up to 24 hours with cool color animations
+                        that turn red as time runs out.</li>
+
+                    <li><strong>Direct Contact</strong>: Get direct contact with <strong>Website Creator</strong> using
+                        contact form for
+                        giving feedback or for asking to add any missing albums/songs in website; add your number for a
+                        quick WhatsApp reply.</li>
+                </ul>
+            </div>
+
+                    <!-- Contact -->
+
+            <div class="info-content-wrapper">
+                <h3>Get in touch</h3>
+                <p style="font-size: 0.9rem; color: #bdc3c7; margin-bottom: 20px;">
+                    Have feedback or facing issues? Fill out the form below and we will get back to you.
+                </p>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mqezdgly" method="POST">
+
+                    <label for="contact-name">Full Name <span style="color: #e74c3c;">*</span></label>
+                    <input type="text" name="name" id="contact-name" placeholder="Enter your name" required>
+
+                    <label for="contact-email">Email Address <span style="color: #e74c3c;">*</span></label>
+                    <input type="email" name="email" id="contact-email" placeholder="Enter valid email for replies"
+                        required>
+
+                    <label for="contact-mobile">Mobile Number <span
+                            style="font-weight: normal; font-size: 0.8rem; color: #7f8c8d;">(Optional)</span></label>
+                    <input type="tel" name="mobile" id="contact-mobile" placeholder="Enter no. for quick response">
+
+                    <label for="contact-message">Message <span style="color: #e74c3c;">*</span></label>
+                    <textarea name="message" id="contact-message" rows="5" placeholder="How can we help you?"
+                        required></textarea>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        
+
+        <section id="album-view-container" class="album-view-container" style="display: none;">
+            <div id="album-main-content" class="album-main-content"></div>
+        </section>
+
+        <div class="bottom-spacer"></div>
+    </main>
+
+    <!-- Player -->
+    <audio id="audio-player" src="" preload="auto"></audio>
+
+    <div class="player" id="main-player" role="region" aria-label="Music Player Controls">
+        <button id="minimize-btn" class="minimize-btn" title="Minimize" aria-label="Exit Fullscreen">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+
+        <div class="player-content">
+            <div class="player-left" style="cursor: pointer;" aria-label="Song Details">
+                <div class="player-album-container">
+
+                    <div id="player-header-stack" class="player-header-stack">
+                        <div id="header-playing-from" class="header-label"></div>
+                        <div id="header-movie-name" class="header-movie"></div>
+                    </div>
+
+                    <img id="player-album-cover" class="player-album-cover"
+                        src="https://res.cloudinary.com/beatzen/image/upload/v1768388495/LOGO_cj2qo1.jpg"
+                        alt="Current Album Artwork" loading="lazy">
+                </div>
+
+                <div class="player-info">
+                    <div id="player-song-title" class="song-title">Select a song to play</div>
+                    <div id="player-song-artist" class="song-artist"></div>
+                </div>
+            </div>
+
+            <div class="player-middle">
+                <div class="player-controls-top">
+                    <button id="shuffle-btn" title="Shuffle" aria-label="Toggle Shuffle Mode"><i
+                            class="fas fa-random"></i></button>
+                    <button id="prev-btn" title="Previous" aria-label="Play Previous Song"><i
+                            class="fas fa-step-backward"></i></button>
+                    <button id="play-pause-btn" title="Play/Pause" aria-label="Toggle Play and Pause"><i
+                            class="fas fa-play"></i></button>
+                    <button id="next-btn" title="Next" aria-label="Play Next Song"><i
+                            class="fas fa-step-forward"></i></button>
+                    <button id="loop-btn" title="Repeat" aria-label="Toggle Repeat Mode"><i
+                            class="fas fa-repeat"></i></button>
+
+                    <div class="timer-btn-container">
+                        <button id="timer-btn" title="Sleep Timer" aria-label="Set Sleep Timer"><i
+                                class="fas fa-clock"></i></button>
+                    </div>
+
+                    <button id="maximize-btn" title="Show Song List" aria-label="Show Playlist Queue">
+                        <i class="fas fa-list-ul"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="player-right"></div>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="progress-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <span id="current-time">0:00</span>
+            <div id="progress-bar" class="progress-bar" aria-label="Music Progress Slider">
+                <div id="progress" class="progress"></div>
+            </div>
+            <span id="duration">0:00</span>
+        </div>
+    </div>
+
+    <!-- Popups -->
+    <div id="timer-popup" class="timer-popup" aria-hidden="true">
+        <div class="timer-popup-content">
+            <button id="close-timer-popup" class="close-popup-btn" aria-label="Close Timer Menu"><i
+                    class="fas fa-times"></i></button>
+            <h3>Set Sleep Timer</h3>
+            <div class="timer-columns-container">
+                <div class="column-wrapper">
+                    <span class="column-label">Hrs</span>
+                    <div class="wheel-picker-container" id="hours-wrapper">
+                        <div class="selection-indicator"></div>
+                        <div class="wheel" id="hours-wheel"></div>
+                    </div>
+                </div>
+                <div class="column-wrapper">
+                    <span class="column-label">Min</span>
+                    <div class="wheel-picker-container" id="mins-wrapper">
+                        <div class="selection-indicator"></div>
+                        <div class="wheel" id="mins-wheel"></div>
+                    </div>
+                </div>
+                <div class="column-wrapper">
+                    <span class="column-label">Sec</span>
+                    <div class="wheel-picker-container" id="secs-wrapper">
+                        <div class="selection-indicator"></div>
+                        <div class="wheel" id="secs-wheel"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="timer-display-container">
+                <span id="timer-heading" style="display: none;">Sleep Timer Started</span>
+                <span id="timer-display"></span>
+            </div>
+            <div id="timer-buttons" class="timer-buttons">
+                <button id="start-timer-btn" aria-label="Start Timer">Set Timer</button>
+                <button id="cancel-timer-btn" style="display: none;" aria-label="Cancel Timer">Cancel Timer</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="success-popup" class="success-popup" style="display: none;" aria-live="polite">
+        <div style="font-size: 3.5rem; color: #38c71b; margin-bottom: 10px;">
+            <i class="fas fa-check-circle" aria-hidden="true"></i>
+        </div>
+        <p>Your message has been submitted successfully.</p>
+        <button id="close-success-popup" aria-label="Close Success Message">OK</button>
+    </div>
+
+    <div id="timer-ended-popup" class="timer-ended-popup" aria-live="assertive">
+        <h3>Timer Ended</h3>
+        <p>The playback has been stopped by the sleep timer.</p>
+        <button id="close-timer-ended" aria-label="Close Timer Alert">OK</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js" defer></script>
+    <script src="playlists.js" defer></script>
+    <script src="explore.js" defer></script>
+    <script src="artists.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="buttons.js" defer></script>
+    <script src="mobile.js" defer></script>
+</body>
+
+</html>
